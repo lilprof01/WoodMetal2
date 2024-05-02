@@ -1,0 +1,125 @@
+body{
+  padding-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section{
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 1;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left-section{
+  height: 50px;
+  flex: 0.5;
+}
+
+.left-section h3{
+  color: white;
+}
+
+.middle-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  flex: 1;
+}
+
+.search-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 22px;
+  border-style: none;
+  background-color: rgb(187, 220, 248);
+
+  cursor: pointer;
+
+  margin-left: -5px;
+}
+
+.search-button:hover{
+  background-color: rgb(136, 190, 237);
+}
+
+input{
+  max-width: 300px;
+  width: 250px;
+  height: 20px;
+  background-color: azure;
+  padding-left: 5px;
+  border: 1px solid  ;
+}
+
+input::placeholder{
+  font-size: 15px;
+  color: black;
+}
+
+input:focus{
+  outline: none;
+}
+
+.right-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  flex: 1;
+  color: white;
+  
+  padding-right: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #ED7D31;
+}
+
+.coming-soon{
+  height: 80vh;
+  width: 80vw;
+  border-radius: 10px;
+
+  margin:20px auto;
+
+  background-color: #333;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 0px 10px;
+}
+
+
+h1{
+  color: white;
+  font-size: 5em;
+}

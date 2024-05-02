@@ -1,0 +1,542 @@
+body{
+  margin: 0;
+  padding-top: 0px;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 80%, rgba(255, 255, 255, 1)), url(./assets/modern-apartment-with-comfortable-sofa-decor-generated-by-ai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-sizing: content-box;
+
+  position: relative;
+}
+
+.motto{
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: 30%;
+  left: 68%;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 40px;
+
+  display: inline-block;
+}
+
+.hero-section{
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 100;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo > img{
+  height: 30px;
+}
+
+h3{
+  align-self: center;
+  color: white;
+}
+
+.left-section{
+  height: 50px;
+  flex: 0.5;
+  display: flex;
+}
+
+.middle-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  flex: 1;
+}
+
+.search-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 22px;
+  border-style: none;
+  background-color: rgb(187, 220, 248);
+
+  cursor: pointer;
+
+  margin-left: -5px;
+}
+
+.search-button:hover{
+  background-color: rgb(136, 190, 237);
+}
+
+input{
+  width: 250px;
+  height: 20px;
+  background-color: azure;
+  padding-left: 5px;
+  border: 1px solid  ;
+}
+
+input::placeholder{
+  font-size: 15px;
+  color: black;
+}
+
+input:focus{
+  outline: none;
+}
+
+.right-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  flex: 1;
+  color: white;
+  
+  padding-right: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #ED7D31;
+}
+
+main{
+  width: 90vw;
+  margin: 0px auto;
+  
+
+  z-index: 1;
+
+  color: white;
+}
+
+.introduction{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+
+  color: black;
+
+  margin-top: 50px;
+}
+
+.introduction > div{
+  height: 200px;
+}
+
+.introduction p{
+  font-size: 15px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+main h1{
+  color: black;
+  font-size: 30px;
+}
+
+main h3{
+  color: black;
+}
+
+.one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(20, 43, 63, 0.836);
+  margin-bottom: 50px;
+}
+
+.body{
+  width: 95vw;
+  margin: 10px auto;
+}
+
+.body-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.image{
+  height: 300px;
+  max-width: 500px;
+  background-image: url(./assets/blue-armchair-against-blue-wall-living-room-interior-elegant-interior-design-with-copy-space-ai-generative.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 8px;
+
+  box-shadow: 0px 5px 10px;
+
+  transition: transform 0.4s ease-out;
+}
+
+.image:hover{
+  transform: translateY(-10px);
+}
+
+.two{
+  background-image: url(./assets/interior-room-design-with-armchair-potted-plants.jpg);
+}
+
+.text{
+  max-width: 70%;
+  margin-left: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text *{
+  margin: 10px;
+  padding: 0;
+}
+
+.text p{
+  font-size: 15px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.testimonials{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.testimonials-grid{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonials-grid > div{
+  height: 400px;
+  width: 300px;
+  background-color: black;
+}
+
+.testimony{
+  border-radius: 5px;
+}
+
+.first{
+  background-image: url(./assets/view-potted-plant-room-with-chair-shelf.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  position: relative;
+
+  padding-bottom: 10px;
+
+  box-shadow: 0px 5px 10px;
+}
+
+.card{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 150px;
+  width: 90%;
+
+  margin: 0 auto;
+
+  border-radius: 5px;
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  width: 80%;
+  margin: 0 auto;
+
+  position: absolute;
+  
+  z-index: 1;
+}
+
+.card-text > h3{
+  margin: 0;
+}
+
+
+
+.second{
+  background-image: url(./assets/room-decor-with-potted-monstera-plant.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  position: relative;
+
+  padding-bottom: 10px;
+
+  box-shadow: 0px 5px 10px;
+}
+
+.third{
+  background-image: url(./assets/interior-design-with-armchair-potted-plant.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  position: relative;
+
+  padding-bottom: 10px;
+
+  box-shadow: 0px 5px 10px;
+}
+
+.circle{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: white;
+
+  position: relative;
+  top: -40px;
+  left: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle > img{
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: 0px 3px 8px;
+}
+
+footer{
+  height: 40vh;
+  width: 100%;
+  background-color: #F6F1EE;
+
+  padding-top: 50px;
+}
+
+.container{
+  width: 85vw;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 100px;
+  
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container p{
+  font-size: 13px;
+}
+
+.footer-details{
+  flex: 1;
+}
+
+.footer-links{
+  flex: 0.8;
+}
+
+.footer-links h4{
+  color: #ED7D31;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li{
+  margin-bottom: 10px;
+  font-size: 13px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer{
+  width: 85vw;
+  margin: 0 auto;
+  padding-top: 70px;
+  font-size: 12px;
+}
+
+
+@media (max-width: 600px) {
+  .motto{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    top: 150px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 800px){
+  .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .logo > img{
+    height: 20px;
+  }
+  
+  h3{
+    align-self: center;
+    color: white;
+    font-size: xx-small;
+  }
+
+  input{
+    max-width: 80px;
+    height: 15px;
+  }
+
+  .search-button{
+    height: 17px;
+  }
+
+  a{
+    font-size: xx-small;
+  }
+
+  .footer-details{
+    font-size: xx-small;
+  }
+
+  .footer-links{
+    font-size: xx-small;
+  }
+
+  .container{
+    gap: 20px;
+  }
+
+  .container p{
+    font-size: xx-small;
+  }
+}
+
+
+@media (min-width: 300px) and (max-width: 1080px){  
+  .motto{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    top: 150px;
+    left: 10px;
+  }
+
+  .introduction{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    max-width: 50%;
+
+    margin: 40px auto;
+  
+    color: black;
+  
+    margin-top: 50px;
+  }
+
+  .testimonials-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 50px;
+  }
+  
+  .testimonials-grid > div{
+    height: 150px;
+    max-width: 300px;
+    background-color: black;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1250px){
+  .motto{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    top: 150px;
+    left: 10px;
+  }
+}
