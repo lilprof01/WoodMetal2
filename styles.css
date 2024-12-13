@@ -1,6 +1,10 @@
+*{
+  box-sizing: content-box;
+}
+
 body{
   margin: 0;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 header{
@@ -40,7 +44,7 @@ h1{
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: transparent;
   transition: background-color 0.3s ease;
@@ -68,62 +72,35 @@ h3{
 
 .left-section{
   height: 50px;
-  flex: 0.5;
-  display: flex;
-}
-
-.middle-section{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  flex: 1;
-}
-
-.search-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 22px;
-  border-style: none;
-  background-color: rgb(187, 220, 248);
-
-  cursor: pointer;
-
-  margin-left: -5px;
-}
-
-.search-button:hover{
-  background-color: rgb(136, 190, 237);
-}
-
-input{
-  width: 250px;
-  height: 20px;
-  background-color: azure;
-  padding-left: 5px;
-  border: 1px solid  ;
-}
-
-input::placeholder{
-  font-size: 15px;
-  color: black;
-}
-
-input:focus{
-  outline: none;
 }
 
 .right-section{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 50px;
   height: 50px;
-  flex: 1;
   color: white;
-  
-  padding-right: 18px;
+}
+
+.cta-button{
+  height: 40px;
+  padding: 2px 16px;
+  margin-right: 10px;
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  color: #ED7D31;
+  transition: all ease 0.2s;
+}
+
+.cta-button:hover{
+  background-color: #ED7D31;
+  color: black;
+  cursor: pointer;
 }
 
 a{
@@ -267,7 +244,7 @@ main h3{
 }
 
 .first{
-  background-image: url(./assets/view-potted-plant-room-with-chair-shelf.jpg);
+  background-image: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,7 +290,7 @@ main h3{
 
 
 .second{
-  background-image: url(./assets/room-decor-with-potted-monstera-plant.jpg);
+  background-image: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,7 +307,7 @@ main h3{
 }
 
 .third{
-  background-image: url(./assets/interior-design-with-armchair-potted-plant.jpg);
+  background-image: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -388,7 +365,7 @@ footer{
   gap: 100px;
   
 
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -425,8 +402,7 @@ li{
 
 .footer{
   width: 85vw;
-  margin: 0 auto;
-  padding-top: 70px;
+  margin: 20px auto;
   font-size: 12px;
 }
 
@@ -440,6 +416,17 @@ li{
     top: 150px;
     left: 10px;
   }
+
+  .body-grid{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .reverse{
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 800px){
@@ -452,20 +439,15 @@ li{
   .logo > img{
     height: 20px;
   }
+
+  .right-section{
+    gap: 20px;
+  }
   
   h3{
     align-self: center;
     color: white;
     font-size: xx-small;
-  }
-
-  input{
-    max-width: 80px;
-    height: 15px;
-  }
-
-  .search-button{
-    height: 17px;
   }
 
   a{
@@ -480,6 +462,10 @@ li{
     font-size: xx-small;
   }
 
+  .footer-links li{
+    font-size: xx-small;
+  }
+
   .container{
     gap: 20px;
   }
@@ -491,13 +477,17 @@ li{
 
 
 @media (min-width: 300px) and (max-width: 1080px){  
+  .cta-button{
+    scale: 0.6;
+  }
+  
   .motto{
     display: flex;
     flex-direction: column;
     
     position: relative;
     top: 150px;
-    left: 10px;
+    left: 0;
   }
 
   .introduction{

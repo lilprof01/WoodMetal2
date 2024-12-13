@@ -17,21 +17,33 @@
           <h3>WoodMetal</h3>
         </div>
       </div>
-      <div class="middle-section">
-        <input type="text" placeholder="search">
-        <button class="search-button"><img src="./assets/search_FILL0_wght400_GRAD0_opsz24.png" class="search-icon"></button>
-      </div>
+    
       <div class="right-section">
         <a href="./index.html"><p>Home</p></a>
-        <a href="#"><p>Services</p></a>
         <a href="products.html"><p>Gallery</p></a>
-        <a href="#"><p>About Us</p></a>
+        <a href="#"><p>Contact Us</p></a>
       </div>
+
+      <button class="cta-button">Book Us</button>
     </div>
 
-    <div class="coming-soon">
-      <h1>Coming Soon...</h1>
-    </div>
+    <section class="contact-section">
+      <h2>Contact Us.</h2>
+      <p>Want to make more enquiries or hire us for your space? Send us a direct message by filling the form below.</p>
+      
+      <form action="https://formspree.io/f/mnnqplbn" method="POST" class="contact-form">
+        
+        <input type="text" id="name" name="name" placeholder="Name" required>
+
+        <input type="tel" id="number" name="number" placeholder="Phone number" required>
+        
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        
+        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
   </body>
 

@@ -2,6 +2,7 @@ body{
   padding-top: 80px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -12,7 +13,7 @@ body{
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #333;
   transition: background-color 0.3s ease;
@@ -20,7 +21,7 @@ body{
   position: fixed;
   top: 0;
 
-  z-index: 1;
+  z-index: 100;
 }
 
 .logo{
@@ -33,69 +34,42 @@ body{
   height: 30px;
 }
 
-.left-section{
-  height: 50px;
-  flex: 0.5;
-  display: flex;
-}
-
-.left-section h3{
+h3{
+  align-self: center;
   color: white;
 }
 
-.middle-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.left-section{
   height: 50px;
-  flex: 1;
-}
-
-.search-button{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 22px;
-  border-style: none;
-  background-color: rgb(187, 220, 248);
-
-  cursor: pointer;
-
-  margin-left: -5px;
-}
-
-.search-button:hover{
-  background-color: rgb(136, 190, 237);
-}
-
-input{
-  max-width: 300px;
-  width: 250px;
-  height: 20px;
-  background-color: azure;
-  padding-left: 5px;
-  border: 1px solid  ;
-}
-
-input::placeholder{
-  font-size: 15px;
-  color: black;
-}
-
-input:focus{
-  outline: none;
 }
 
 .right-section{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 50px;
   height: 50px;
-  flex: 1;
   color: white;
-  
-  padding-right: 18px;
+}
+
+.cta-button{
+  height: 40px;
+  padding: 2px 16px;
+  margin-right: 10px;
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  color: #ED7D31;
+  transition: all ease 0.2s;
+}
+
+.cta-button:hover{
+  background-color: #ED7D31;
+  color: black;
+  cursor: pointer;
 }
 
 a{
@@ -259,13 +233,75 @@ h1{
   color: #ED7D31;
 
   border-radius: 20px;
+  border: none;
 
   margin: 0 auto;
+
+  transition: all ease 0.2s;
 }
 
 .gallery button:hover{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #ED7D31;
+  color: black;
   cursor: pointer;
+}
+
+footer{
+  height: 40vh;
+  width: 100%;
+  background-color: #F6F1EE;
+
+  padding-top: 50px;
+  margin-top: 30px;
+}
+
+.footer-container{
+  width: 85vw;
+  margin: 20px auto 0 auto;
+
+  display: flex;
+  gap: 100px;
+  
+
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.container p{
+  font-size: 13px;
+}
+
+.footer-details{
+  flex: 1;
+}
+
+.footer-links{
+  flex: 0.8;
+}
+
+.footer-links h4{
+  color: #ED7D31;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li{
+  margin-bottom: 10px;
+  font-size: 13px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer{
+  width: 85vw;
+  margin: 20px auto;
+  font-size: 12px;
 }
 
 @media (max-width: 800px){
@@ -285,15 +321,6 @@ h1{
     font-size: xx-small;
   }
 
-  input{
-    max-width: 80px;
-    height: 15px;
-  }
-
-  .search-button{
-    height: 17px;
-  }
-
   a{
     font-size: xx-small;
   }
@@ -306,11 +333,15 @@ h1{
     font-size: xx-small;
   }
 
-  .container{
+  .footer-links li{
+    font-size: xx-small;
+  }
+
+  .footer-container{
     gap: 20px;
   }
 
-  .container p{
+  .footer-container p{
     font-size: xx-small;
   }
 }
@@ -328,5 +359,14 @@ h1{
     to {
       height: 200px;
     }
+  }
+
+  .cta-button{
+    scale: 0.6;
+    margin-right: 0;
+  }
+
+  .right-section{
+    gap: 20px;
   }
 }
