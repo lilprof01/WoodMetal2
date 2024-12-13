@@ -1,7 +1,3 @@
-*{
-  box-sizing: content-box;
-}
-
 body{
   margin: 0;
   padding-top: 0;
@@ -169,6 +165,10 @@ main h3{
 .body{
   width: 95vw;
   margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .body-grid{
@@ -370,7 +370,7 @@ footer{
 }
 
 .container p{
-  font-size: 13px;
+  /* font-size: 13px; */
 }
 
 .footer-details{
@@ -447,7 +447,7 @@ li{
   h3{
     align-self: center;
     color: white;
-    font-size: xx-small;
+    /* font-size: xx-small; */
   }
 
   a{
@@ -480,7 +480,7 @@ li{
   .cta-button{
     scale: 0.6;
   }
-  
+
   .motto{
     display: flex;
     flex-direction: column;
